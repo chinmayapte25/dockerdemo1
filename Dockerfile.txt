@@ -1,0 +1,8 @@
+#getting base image ubuntu
+FROM ubuntu
+
+MAINTAINER chinmay apte <chinmay.apte@learnship.com>
+
+RUN apt-get update
+
+CMD ["echo", "Hello..I am learning Docker and this is my first docker image"]	 
