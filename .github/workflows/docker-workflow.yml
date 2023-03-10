@@ -24,4 +24,4 @@ jobs:
       run: docker build . --file Dockerfile.txt --tag my-image-name:$(date +%s)
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/docker_repo:my-image-name
+      run: docker push ${{secrets.DOCKER_USER}}/docker_repo:myfirstimage:1.0
