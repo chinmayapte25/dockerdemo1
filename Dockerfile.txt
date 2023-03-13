@@ -5,4 +5,4 @@ MAINTAINER chinmay apte <chinmay.apte@learnship.com>
 
 RUN apt-get update
 
-CMD ["echo", "Hello..I am learning Docker and this is my second docker image. I have created this image with the help of GitHub Actions Workflow"]	 
+CMD ["echo", "Hello..I am learning Docker and this is my first docker image"]
