@@ -27,4 +27,4 @@ jobs:
       run: docker tag chinmayapte01/docker_repo:2.0 chinmayapte01/myfirstimage:2.0.1
       
     - name: Docker Push
-      run: docker push chinmayapte01/docker_repo:2.0
+      run: docker push chinmayapte01/myfirstimage:2.0.1
