@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile.txt --tag imageone:2.0
+      run: docker build . --file Dockerfile.txt --tag chinmayapte01/imageone:2.0
       
    #- name: Docker Tag
    #   run: docker tag myfirstimage:1.0 imageone:stable
