@@ -27,4 +27,4 @@ jobs:
       run: docker tag myfirstimage:1.0 imageone:stable
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/docker_repo/myfirstimage:1.0
+      run: docker push ${{secrets.DOCKER_USER}}/myfirstimage:1.0
