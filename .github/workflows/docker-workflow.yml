@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile.txt --tag my-image-name:$(date +%s)
+      run: docker build github.com/dockerdemo1/Dockerfile.txt
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/myfirstimage:latest
+      run: docker push ${{secrets.DOCKER_USER}}/docker_repo/myfirstimage:latest
