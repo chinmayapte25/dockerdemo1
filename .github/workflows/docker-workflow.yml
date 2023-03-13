@@ -23,8 +23,8 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile.txt --tag chinmayapte01/docker_repo:2.0
       
-    #- name: Docker Tag
-    #  run: docker tag chinmayapte01/myfirstimage:1.0 chinmayapte01/myfirstimage:initial
+    - name: Docker Tag
+      run: docker tag chinmayapte01/docker_repo:2.0 chinmayapte01/myfirstimage:1.0
       
     - name: Docker Push
       run: docker push chinmayapte01/docker_repo:2.0
