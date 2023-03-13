@@ -27,4 +27,4 @@ jobs:
    #   run: docker tag myfirstimage:1.0 imageone:stable
       
     - name: Docker Push
-      run: docker push chinmayapte01/myfirstimage:2.0
+      run: docker push chinmayapte01/myfirstimage/imageone:2.0
