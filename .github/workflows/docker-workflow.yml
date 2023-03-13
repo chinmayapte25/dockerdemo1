@@ -23,8 +23,8 @@ jobs:
     - name: Build the Docker image
       run: docker build -t myfirstimage:1.0 . -f Dockerfile.txt
       
-    - name: Docker Tag
-      run: docker tag myfirstimage:1.0 imageone:stable
+   #- name: Docker Tag
+   #   run: docker tag myfirstimage:1.0 imageone:stable
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/docker_repo/imageone:stable
+      run: docker push chinmayapte01/docker_repo/myfirstimage:1.0
